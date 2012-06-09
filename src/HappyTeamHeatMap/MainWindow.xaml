@@ -1,0 +1,25 @@
+﻿<Window x:Class="HappyTeamHeatMap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:TreeMaps.Controls;assembly=TreeMaps"
+        xmlns:local="clr-namespace:HappyTeamHeatMap"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        
+        <local:NumberToColorConverter x:Key="NumberToColorConverter"/>
+        
+        <DataTemplate x:Key="mapAreaTemplate">
+            <Button Background="{Binding Path=Average, Converter={StaticResource NumberToColorConverter}}" Content="{Binding GroupId}" Click="ButtonClick"/>
+        </DataTemplate>
+        
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Button DataContext="{Binding ThisGroup}" Background="{Binding Average, Converter={StaticResource NumberToColorConverter}}" Content="{Binding GroupId}" Click="ParentButtonClick"/>
+        <l:TreeMaps Grid.Row="1" x:Name="SubGroupPanel" ItemsSource="{Binding SubGroups}" ItemTemplate="{StaticResource mapAreaTemplate}" ValuePropertyName="Count"/>    
+    </Grid>
+</Window>

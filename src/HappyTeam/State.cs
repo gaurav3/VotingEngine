@@ -15,10 +15,10 @@ namespace HappyTeam
         {
             AllStates = new List<State>
             {
-                new State{Id="Cry", Image="/Resources/Cry.png"},
-                new State{Id="AboutToCry", Image="/Resources/AboutToCry.png"},
-                new State{Id="Smile", Image="/Resources/Smile.png"},
-                new State{Id="BigSmile", Image="/Resources/BigSmile.png"}
+                new State{Id="Cry", Image="/Resources/Crying32x32.png"},
+                new State{Id="Sad", Image="/Resources/Sad32x32.png"},
+                new State{Id="Smile", Image="/Resources/Smile32x32.png"},
+                new State{Id="BigSmile", Image="/Resources/BigSmile32x32.png"}
             };
         }
 

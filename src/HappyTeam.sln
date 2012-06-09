@@ -3,12 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTeam", "HappyTeam\HappyTeam.csproj", "{66A5032E-D393-4029-AF88-A92E169FFD08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTeamService", "HappyTeamService\HappyTeamService.csproj", "{57DD5013-8E73-40B5-81CA-F87AD83F2586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTeamHeatMap", "HappyTeamHeatMap\HappyTeamHeatMap.csproj", "{5D274D53-1EDF-44D4-AE2D-0CC98560CF88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTeamCommon", "HappyTeamCommon\HappyTeamCommon.csproj", "{55883CF2-B8EA-45A6-940C-59463568ACD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55883CF2-B8EA-45A6-940C-59463568ACD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55883CF2-B8EA-45A6-940C-59463568ACD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55883CF2-B8EA-45A6-940C-59463568ACD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55883CF2-B8EA-45A6-940C-59463568ACD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57DD5013-8E73-40B5-81CA-F87AD83F2586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DD5013-8E73-40B5-81CA-F87AD83F2586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DD5013-8E73-40B5-81CA-F87AD83F2586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DD5013-8E73-40B5-81CA-F87AD83F2586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D274D53-1EDF-44D4-AE2D-0CC98560CF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D274D53-1EDF-44D4-AE2D-0CC98560CF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D274D53-1EDF-44D4-AE2D-0CC98560CF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D274D53-1EDF-44D4-AE2D-0CC98560CF88}.Release|Any CPU.Build.0 = Release|Any CPU
 		{66A5032E-D393-4029-AF88-A92E169FFD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{66A5032E-D393-4029-AF88-A92E169FFD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66A5032E-D393-4029-AF88-A92E169FFD08}.Release|Any CPU.ActiveCfg = Release|Any CPU

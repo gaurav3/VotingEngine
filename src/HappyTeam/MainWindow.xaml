@@ -11,7 +11,7 @@
 
     <Grid>
         <tb:TaskbarIcon x:Name="MainNotifyIcon"
-            IconSource="/Resources/Smile.ico"
+            IconSource="/Resources/Star.ico"
             ToolTipText="Click to Vote!">
 
         <tb:TaskbarIcon.TrayPopup>
@@ -20,8 +20,8 @@
           BorderBrush="Orange"
           BorderThickness="2"
           CornerRadius="4"
-          Width="560"
-                Height="140">
+          Width="Auto"
+                Height="Auto">
                 <ListBox ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Path=States}" SelectedItem="{Binding SelectedState}">
                     <ListBox.ItemsPanel>
                         <ItemsPanelTemplate>
