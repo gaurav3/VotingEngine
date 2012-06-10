@@ -21,8 +21,6 @@ namespace HappyTeamService
 
         static DataModel()
         {
-            Publishedvalues = new Dictionary<string, string>();
-
             usersFileName = ConfigurationManager.AppSettings["usersxml"];
 
             //generate dummy for test.. to be used only for testing after the data structures are changed
@@ -35,8 +33,14 @@ namespace HappyTeamService
             PopolateAllVotersWithInEachSubGroup(RootNode);
         }
         
-        public static Dictionary<string, string> Publishedvalues { get; set; }
-
+        public static void LogData(string id, string value)
+        {
+            if (_voterIndex.ContainsKey(id))
+            {
+                _voterIndex[id].Vote = value;
+            }
+        }
+        
         public static VoterGroup GetGroup(string groupId)
         {
             if (_groupIndex.ContainsKey(groupId))

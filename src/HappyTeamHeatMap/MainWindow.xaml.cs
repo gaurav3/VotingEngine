@@ -44,9 +44,13 @@ namespace HappyTeamHeatMap
             var btn = (Button)sender;
             var details = (GroupDetails)btn.DataContext;
 
-            if (string.IsNullOrEmpty(details.ParentGroupId)) return;
+            string groupId;
+            if (string.IsNullOrEmpty(details.ParentGroupId))
+                groupId = details.GroupId;
+            else
+                groupId = details.ParentGroupId;
 
-            viewModel.UpdateGroupId(details.ParentGroupId);
+            viewModel.UpdateGroupId(groupId);
         }
 
     }

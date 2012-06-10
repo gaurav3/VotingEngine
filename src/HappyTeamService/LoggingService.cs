@@ -15,8 +15,8 @@ namespace HappyTeamService
     {
         public void LogData(string id, string value)
         {
-            if(id!=null && value!=null)
-                DataModel.Publishedvalues[id] = value;
+            if (id != null && value != null)
+                DataModel.LogData(id, value);
         }
 
         public HeatMapInfo GetHeatMapInfo(string groupId)

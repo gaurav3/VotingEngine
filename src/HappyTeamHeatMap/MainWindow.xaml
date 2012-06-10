@@ -3,13 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:l="clr-namespace:TreeMaps.Controls;assembly=TreeMaps"
         xmlns:local="clr-namespace:HappyTeamHeatMap"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Background="Red">
     <Window.Resources>
-        
+
         <local:NumberToColorConverter x:Key="NumberToColorConverter"/>
         
         <DataTemplate x:Key="mapAreaTemplate">
-            <Button Background="{Binding Path=Average, Converter={StaticResource NumberToColorConverter}}" Content="{Binding GroupId}" Click="ButtonClick"/>
+            <Button Background="{Binding Path=Average, Converter={StaticResource NumberToColorConverter}}" Content="{Binding GroupId}" Click="ButtonClick" FontSize="16">
+            </Button>
         </DataTemplate>
         
     </Window.Resources>
@@ -19,7 +20,7 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
-        <Button DataContext="{Binding ThisGroup}" Background="{Binding Average, Converter={StaticResource NumberToColorConverter}}" Content="{Binding GroupId}" Click="ParentButtonClick"/>
+        <Button DataContext="{Binding ThisGroup}" Background="{Binding Path=Average, Converter={StaticResource NumberToColorConverter}}" Content="{Binding GroupId}" Click="ParentButtonClick" FontSize="16"/>
         <l:TreeMaps Grid.Row="1" x:Name="SubGroupPanel" ItemsSource="{Binding SubGroups}" ItemTemplate="{StaticResource mapAreaTemplate}" ValuePropertyName="Count"/>    
     </Grid>
 </Window>

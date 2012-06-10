@@ -19,6 +19,7 @@ namespace HappyTeamHeatMap
             color.B = 0;
             color.R = (byte)Math.Floor(255 * (1.0 - doubleValue));
             color.G = (byte)Math.Floor(255 * doubleValue);
+            color.A = 255;
 
             return new SolidColorBrush(color);
         }

@@ -29,6 +29,8 @@ namespace HappyTeamHeatMap
             {
                 var heatmapInfo = ServiceProxy.GetGroupHeatMapInfo(groupId);
 
+                if (heatmapInfo.SubGroupDetails == null || heatmapInfo.SubGroupDetails.Count == 0) return;
+
                 ThisGroup = heatmapInfo.CurrentGroupDetails;
 
                 SubGroups = heatmapInfo.SubGroupDetails;
