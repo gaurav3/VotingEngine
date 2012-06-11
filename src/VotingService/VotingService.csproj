@@ -57,7 +57,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HappyTeamCommon\VotingEngineCommon.csproj">
+    <ProjectReference Include="..\VotingEngineCommon\VotingEngineCommon.csproj">
       <Project>{55883cf2-b8ea-45a6-940c-59463568acd8}</Project>
       <Name>VotingEngineCommon</Name>
     </ProjectReference>
