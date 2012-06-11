@@ -1,0 +1,20 @@
+Project structure:
+------------------
+This project allows anonymous voting amongst a network of windows user. This consists of four parts:
+1. Voting Client - The names and icons -in .png format- can be provided in the config file of this project
+2. Voting Service - This is a wcf service that needs to be hosted in IIS. This is to be configured to have a value (0-1.0) associated with each one of the above states. The user heirarchy is also configured in this project using user.xml.
+3. Voting Results Heatmap - This project allows connecting with the Voting service to fetch the voting data and generate and rectangular heatmap. Each segment can be clicked to see further details of the sub-teams.
+4. Common - Common classes used across multiple projects mentioned above.
+
+Possible uses:
+--------------
+This can be used for any sort of anonymous voting within an organization. Possible examples could be:
+1. Monitoring the happiness level of various teams in realtime. This can be tied together with project phases and status reports and can serve as an important factor.
+2. To monitor the general sentiment on any issue that affects the entire organization.
+3. To monitor market sentiment on any stock, sector, country, currency etc. If taken from a good sample set this can serve as a good indicator.
+
+Features:
+---------
+1. The login id is automatically detected so that one user is allowed to vote only once from whichever machine.
+2. The voting is completely anonymous as the login Id is never shown with the results. It's only displayed as the team level average.
+3. A user can change his vote whenever he desires which is recorded as a state change nullifying the users last vote. So this automatically reflects in the new results accordingly.
