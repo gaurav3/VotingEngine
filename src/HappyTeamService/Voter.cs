@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace HappyTeamService
+namespace VotingService
 {
     [XmlRoot("Group")]
     public class VoterGroup

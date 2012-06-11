@@ -7,9 +7,9 @@ using System.ServiceModel;
 using System.Text;
 using System.Xml.Serialization;
 using System.Configuration;
-using HappyTeamCommon;
+using VotingEngineCommon;
 
-namespace HappyTeamService
+namespace VotingService
 {
     public class LoggingService : ILoggingService
     {

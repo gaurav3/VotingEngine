@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HappyTeamCommon;
+using VotingEngineCommon;
 
-namespace HappyTeamHeatMap
+namespace VotingResultsHeatMap
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {

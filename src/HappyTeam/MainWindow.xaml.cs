@@ -15,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Hardcodet.Wpf.TaskbarNotification;
 
-namespace HappyTeam
+namespace VotingClient
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

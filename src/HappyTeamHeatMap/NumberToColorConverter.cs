@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace HappyTeamHeatMap
+namespace VotingResultsHeatMap
 {
     [ValueConversion(typeof(double), typeof(Brush))]
     public class NumberToColorConverter: IValueConverter

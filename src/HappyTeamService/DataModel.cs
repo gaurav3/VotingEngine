@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace HappyTeamService
+namespace VotingService
 {
     public static class DataModel
     {

@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.Security.Principal;
-using HappyTeamCommon;
+using VotingEngineCommon;
 
-namespace HappyTeam
+namespace VotingClient
 {
     public class MainWindowViewModel
     {
-
         public List<State> States { get { return State.AllStates; } }
 
         private State selectedState;

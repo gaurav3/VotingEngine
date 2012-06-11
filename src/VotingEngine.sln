@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTeam", "HappyTeam\HappyTeam.csproj", "{66A5032E-D393-4029-AF88-A92E169FFD08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotingClient", "HappyTeam\VotingClient.csproj", "{66A5032E-D393-4029-AF88-A92E169FFD08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTeamService", "HappyTeamService\HappyTeamService.csproj", "{57DD5013-8E73-40B5-81CA-F87AD83F2586}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotingService", "HappyTeamService\VotingService.csproj", "{57DD5013-8E73-40B5-81CA-F87AD83F2586}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTeamHeatMap", "HappyTeamHeatMap\HappyTeamHeatMap.csproj", "{5D274D53-1EDF-44D4-AE2D-0CC98560CF88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotingResultsHeatMap", "HappyTeamHeatMap\VotingResultsHeatMap.csproj", "{5D274D53-1EDF-44D4-AE2D-0CC98560CF88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyTeamCommon", "HappyTeamCommon\HappyTeamCommon.csproj", "{55883CF2-B8EA-45A6-940C-59463568ACD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotingEngineCommon", "HappyTeamCommon\VotingEngineCommon.csproj", "{55883CF2-B8EA-45A6-940C-59463568ACD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
